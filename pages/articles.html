@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luiz Filipe">
+    <link rel="icon" type="image/png" href="../img/html.png">
+    <title>HTML Puro</title>
+</head>
+<body  background="../img/bkg12.jpg">
+    <embed src="../yield/header.html" type="" width="100%">
+    <figure><figure><figure>
+        <article>
+            <table>
+                <tr>
+                    <th>
+                        <img src="../img/doc1.png" alt="" width="200"> 
+                    </th>
+                    <th>
+                        <br><br><br><br><br><br><br>
+                        <h1>Memórias do Computador</h1>
+                    </th>
+                </tr>
+            </table>
+            <details>
+                <summary>Ler</summary>
+                <dl>
+                    <dt>
+                        <h2>O que são memórias?</h2>
+                    </dt>
+                    <dd>
+                        <meter min="0" max="60" value="10" low="11"></meter>
+                        <p>As memórias no computador são dispositivos que podem armazenar dados de maneira temporária ou permanente. A partir disso elas são classificadas em memórias voláteis e não voláteis.</p>
+                        <p>Uma memória volátil armazena dados apenas na presença de energia. Caso a não haja energia, toda a informação contida nela é perdida e por isso seu armazenamento é temporário. Alguns tipos de memórias voláteis são a <a href="#RAM">RAM</a> e a memória <a href="#cache">cache</a>.</p>
+                        <p>Uma memória não volátil não perde os dados escritos na ausência de energia, por isso que a informação contida nela é duradoura. Alguns tipos de memórias não voláteis são as memórias <a href="#ROM">ROM</a> a <a href="#HD"><dfn title="HD">unidade de estado sólido</dfn></a> e o <a href="#SSD">SSD</a>.</p>
+                    </dd>
+                    <dt>
+                        <h3 id="RAM">RAM</h3>
+                    </dt>
+                    <dd>
+                        <details>
+                            <summary>Saiba Mais</summary>
+                            <meter min="0" max="60" value="20"></meter>
+                            <fieldset>
+                                <figure>
+                                <h4>O que é:</h4>
+                                <p>A RAM, sigla cuja tradução consiste em memória de acesso randômico, é uma memória volátil importante para o processamento das informações, por isso ela é classificada também como memória primeira. </p>
+                                <p>O acesso randômico faz referência aos modo como transistores e capacitores são utilizados para referenciar bits 0 e 1, sendo que são selecionados aleatoriamente enquanto houver corrente passando por eles.</p>
+                                <p>Ao iniciar o computador, as informações que o processador necessita para serem usadas em um curto período de tempo e são muito grandes para serem armazenadas na memória cache ficam armazenadas na RAM. </p>
+                                <p>Em primeiro lugar, as informações de inicialização ficam armazenadas nas memórias não voláteis e são transmitidas para a RAM, que por sua vez as transmite para o processador.</p>
+                                <p>O processador é quem recorre ao acesso da RAM, fazendo uma cópia dos dados necessários para a memória cache caso haja um uso desses dados algum tempo depois.</p>
+                                <p>Mas por que o processador não acessa as informações diretamente da memória não volátil?</p>
+                                <p>Atualmente, isso ocorre devido ao tempo de transferência de dados. Para você perceber a diferença, dependendo do processador e da memória não volátil, a velocidade de acesso em comparação com a RAM é 60 mil vezes mais lenta, ou seja, não vale a pena.</p>
+                                </figure>
+                                <figure>
+                                    <h4>Tipos de RAM:</h4>
+                                    <p>Durante a evolução do hardware de memória de acesso remoto houveram diversos padrões de tecnologias com cada uma ditando a capacidade máxima da RAM. Alguns dos padrões de memória são simm, dimm, ddr3 sdram e ddr4 sdram.</p>
+                                    <p>O padrão mais antigo e não mais utilizado é o simm, sigla para Single In-Line Memory Module. O substituto para o simm foi o dimm, sigla para Dual Inline Memory Module, que possuía o dobro da capacidade e taxa de transmissão.</p>
+                                    <p>O padrão DDR, sigla para Double-Data-Rate  introduziu a técnica de duplicação de taxa de transferência, fazendo com que a capacidade de transmissão aumentasse mais uma vez e assim ocorreu para os consecutivos Padrões DDR.</p>
+                                    <p>Os padrões mais comuns, atualmente, de RAM são os <b>DDR3</b> e <b>DDR4</b>.</p>
+                                    <p>O <ins>padrão DDR3</ins> permite a criação de memórias com frequência de 800 MHz até 2400 MHz e possui uma capacidade de armazenamento de até 8 GB por slot.</p> 
+                                    <p>Algumas placas-mãe possuem até mais de 4 slots de RAM, então pode-se aumentar a capacidade mesmo com a limitação de 8 GB por slot.</p>
+                                    <p>O <ins>padrão DDR4</ins> é o mais recente. Ele permite a criação de memórias com frequência de 2.133 até 4.266 MHz e possui uma capacidade de armazenamento de até 16 GB por slot.</p>
+                                    <p>A mesma característica da placa-mãe DDR3 vale para a DDR4, porém, não é possível utilizar uma memória de um padrão em um slot de outro. Além do encaixe não ser possível, há o risco de perda ou excesso de energia, pois a memória DDR3 (1.5V) requer uma tensão maior do que a DDR4 (1.2V). Por isso que as placas-mãe precisam ser compatíveis com o tipo de memória.</p>
+                                    <p>Sobre as marcas, devido à relativa simplicidade de criação da memória de acesso randômico, há uma quantidade de empresas muito maior do que as de processadores, por exemplo.</p>
+                                    <p>A nomenclatura de uma memória DDR é a seguinte: </p>
+                                    <pre><code>         DDR() []/PC() {}</code></pre>
+                                    <ul>
+                                        <li> O parêntesis indica o tipo de DDR (2, 3, 4 ou 5). </li>
+                                        <li>O colchete indica o clock máximo da memória.</li>
+                                        <li>A chave indica a velocidade máxima de transferência de dados, medida em mb/s.</li>
+                                    </ul>
+                                    <p>A diferença entre frequência e velocidade de transferência é que a transferência de dados é feita a cada determinada quantidade de ciclos.</p>                               
+                                    <p>Outras características que podemos ver sobre a RAM é que a sua frequência máxima é premeditada pelo processador instalado. </p>
+                                    <p>Processadores da Intel da 6ª e 7ª geração, por exemplo, permitem uma frequência máxima de memória de 2.400 MHz, mesmo se a memória for de 3.200 MHz.</p>
+                                    <p>Uma parte maior dos processadores da AMD já possuem uma liberação de frequência mais alta do que os da Intel.</p>
+                                    <p>Além disso, ao utilizar mais de uma memória, o recomendado é que tenham a mesma frequência, independente da marca, pois com frequências diferentes, o processador precisa acessá-las de uma mesma maneira, então ele vai igualar a frequência da RAM baseando-se na menor frequência, ou seja, ocorre uma perda de velocidade.</p>
+                                    <p>Um canal de memória apenas pode não ser suficiente para acompanhar a velocidade dos processadores. A partir disso surgiu a prática de dual-channel, que nada mais é do que utilizar memórias em uma configuração que dobre a capacidade de transferência e leitura de informações para o processador.</p>
+                                    <p>Esse tipo de configuração depende da especificação da placa-mãe e do processador. Atualmente, ele é tão comum que já está presente na maioria dos computadores.</p>
+                                    <p>A recomendação para o uso do dual-channel é que se utilize pentes de memórias com a mesma capacidade de armazenamento e frequência e que seja mais de um pente e em número par de quantidade.</p>
+                                    <p>Pode-se perceber diante disso que ao utilizar apenas um pente de RAM DDR4 de 8 GB e dois pentes de RAM DDR4 de 4 GB cada, a segunda opção acaba sendo mais rápida do que a primeira, mesmo com a mesma capacidade.</p>
+                                </figure>
+                            </fieldset>
+                        </details>
+                    </dd>
+                    <dt>
+                        <h3 id="cache">Cache</h3>
+                    </dt>
+                    <dd>
+                        <details>
+                            <summary>Saiba Mais</summary>
+                            <meter min="0" max="60" value="30"></meter>
+                            <fieldset>
+                                <figure>
+                                    <h4>O que é:</h4>
+                                    <p>Dentro do processador há ainda a unidade de memória e a divisão das unidades de processamento em núcleos.</p>
+                                    <p>A memória presente no processador é chamada de <ins>cache</ins> e possui um grau de performance maior do que as outras memórias do computador, pois se trata de um armazenamento de constante acesso pelas unidades de processamento.</p>
+                                    <p>Na ordem hierárquica de memórias, as mais rápidas também são as com menor capacidade, principalmente devido a tecnologia e o seu consequente custo alto.</p>
+                                    <p>É o que acontece com a memória cache. De todas, ela é a que possui menor capacidade de armazenamento, na ordem dos MB ( <i>Mega Bytes</i> ).</p>
+                                    <p>A memória cache pode ser classificada de acordo com a posição em relação ao processador e com isso existem os níveis <b>l1</b>, <b>l2</b> e <b>l3</b>. Quanto menor o número, mais próximo o armazenamento está do processador.</p>
+                                    <p>É importante notar que, quanto mais memória cache disponível, melhor será o desempenho dos processos do computador, pois a capacidade das memórias é mensurada de acordo com o poder de processamento da CPU.</p>
+                                </figure>
+                            </fieldset>
+                        </details>
+                    </dd>
+                    <dt>
+                        <h3 id="ROM">ROM</h3>
+                    </dt>
+                    <dd>
+                        <details>
+                            <summary>Saiba Mais</summary>
+                            <meter min="0" max="60" value="40"></meter>
+                            <fieldset>
+                                <figure>
+                                    <h4>O que é:</h4>
+                                    <p>A ROM, sigla para <i>Ready-Only Memory</i>, é uma memória não volátil. Ela armazena uma informação feita pelo fabricante uma única vez e que, depois disso, só pode ser lida, ou seja, não é possível alterar ou remover a informação. Daí o seu nome: memória somente de leitura.</p>
+                                    <p>O termo ROM é utilizado para identificar vários tipos de memória, como a memória <b>prom</b>, <b>eprom</b>, <b>eeprom</b> e memória <b>flash</b>.</p>
+                                    <p>A memória <ins>prom</ins>, sigla para <i>Programmable Read-Only Memory</i>, é utilizada para programar informações de dispositivos especiais e armazená-las nessa memória para depois ser utilizada apenas como leitura.</p>
+                                    <p>A <ins>eprom</ins>, sigla para <i>Erasable Programmable Read-Only Memory</i>, é um tipo de memória cujos dados podem ser apagados por meio de radiação ultravioleta. Apenas com isso é possível reutilizá-la.</p>
+                                    <p>Há ainda outras formas de apagar as informações da ROM, depende do seu tipo. Por exemplo, a <ins>eeprom</ins>, sigla para <i>Electrically Erasable Programmable Read-Only Memory</i>, pode ser apagada ou alterada por meio de descarga elétrica. A memória <ins>flash</ins> possui o mesmo método da eeprom, porém, se diferencia na maior velocidade e menor custo.</p>
+                                    <p>A ROM mais conhecida e mais utilizada é a BIOS e como foi dito nas fases anteriores, o software presente nessa memória é chamado de firmware.</p>
+                                </figure>
+                            </fieldset>
+                        </details>
+                    </dd>
+                    <dt>
+                    <h3 id="HD">Unidade de Estado Sólido</h3>
+                    </dt>
+                    <dd>
+                        <details>
+                            <summary>Saiba Mais</summary>
+                            <meter min="0" max="60" value="50"></meter>
+                            <fieldset>
+                                <figure>
+                                    <h4>O que é:</h4>
+                                    <p>O disco rígido, também chamado de HD, é o hardware responsável pelo armazenamento dos dados a longo prazo como os softwares (programas e <dfn title="Sistema Operacional. Em inglês, Operational System">SO</dfn> ) e as informações salvas dos usuários.</p>
+                                    <p>Uma outra função do HD se refere à transmissão de seus dados para processamento. Normalmente, o HD utiliza a RAM como ponte de transferência de informação, mas é possível emular essa RAM no HD, aumentando a capacidade total de RAM.</p>
+                                    <p>A capacidade de armazenamento de dados do HD é medida em <i>Gigabytes</i> e <i>Terabytes</i>. Já a sua velocidade de transferência é medida em MB/s.</p>
+                                    <p>Os HDs mais comuns no mercado são os de capacidade acima de 500 GB até 2 TB.</p>
+                                    <p>O funcionamento do HD é mecânico. Ele consiste no uso de um disco interno capaz de girar em torno de si, próximo a uma bobina em forma de pinça que propaga impulsos magnéticos no disco. Esses impulsos interagem com o disco gravando dados.</p>
+                                    <p>É importante saber que a bobina não encosta no disco. Caso isso ocorra, principalmente se o HD estiver ligado, pode causar sérios danos como travamentos, perda de arquivos ou o não funcionamento completo do HD.</p>
+                                    <p>Por isso é recomendado ter cuidado ao manusear o HD enquanto estiver em uso, pois qualquer choque pode causar sérios problemas.</p>
+                                    <p>Esse problema ocorre com mais frequência com notebook, pois, devido à sua portabilidade, também são mais passíveis de quedas e choques.</p>
+                                    <p>Outra característica interessante a ser notada é que, como a gravação ocorre por impulsos magnéticos, o uso de ímãs próximos ao HD também pode causar danos, mas isso ocorre apenas com ímãs fortes se o HD estiver desligado. Isso ocorre porque os ímãs desestabilizam o campo magnético do disco, podendo apagar as informações.</p>
+                                    <p>Então, por motivos de segurança, não é recomendado deixar um HD próximo a um imã.</p>
+                                    <p>Outra parte importante do HD é o conector de energia, que fornece energia para o hardware, e o conector de transferência de dados. Antigamente, utilizava-se o padrão IDE, porém, os HDs de hoje possuem o conector que permite uma transferência de dados mais rápida, o SATA.</p>
+                                    <p>É importante saber que existem dois conectores SATA no HD. Um para se conectar à fonte e outro para se conectar à placa-mãe. Este é mais simples de se identificar, pois é o menor conector SATA.</p>
+                                    <p>Para conectar o HD à placa-mãe basta pegar um cabo SATA e conectá-lo na entrada SATA (em forma de L) da placa mãe. Geralmente a placa-mãe possui mais de um conector SATA.</p>
+                                    <p>Existem três tipos de conectores SATA, o SATA I, SATA II e SATA III. A diferença entre eles é a maior velocidade de transmissão do primeiro ao terceiro. O padrão atual é o <b>SATA III</b> . Sua velocidade de transmissão chega a 600 MB/s.</p>
+                                    <p>Recentemente esse padrão também está sendo substituído por outro.</p>   
+                                    <h4>Vida útil e RAID:</h4>
+                                    <p>A vida útil de um HD é de, em média, 6 anos. Então, para preservar os dados contidos nele deve ser feita uma cópia de segurança chamada de backup de dados. Ela geralmente é feita pela transferência dos dados de um HD para outro dispositivo de armazenamento, mas também há uma técnica de arranjo de discos independentes que consiste em duplicar a informação em um HD, caso haja problema, em outro HD. Essa técnica é chamada de RAID.</p>
+                                    <p>O RAID, além de desempenhar uma maior disponibilidade de dados, proporciona maior desempenho. Apesar de convencional, não é uma tecnica muito utilizada pelos leigos, pois pode causar uma total perda de dados, então pense bem antes de recomendar ou realizar essa prática.</p>
+                                    <p>O RAID pode ser classificado em diversos níveis, como o Nível 0, em que os discos se comportam como se fossem apenas um devido ao particionamento de dados. Como esse nível, a capacidade de armazenamento e a taxa de transferência de dados aumentam, porém, caso um HD falhe, todos os discos ficam comprometidos.</p>
+                                    <p>Existem outros como o nível 1, que pode ser compreendido como o RAID propriamente dito, pois os discos são utilizados para fornecer redundância dos dados e o nível 5, que funciona como o RAID nível 0, mas com a possibilidade de recuperação de informação mesmo com a falha de um HD.</p>
+                                    <p>Essa técnica é mais utilizada em servidores e bancos de dados, mas também pode ser utilizada para computadores pessoais.</p>                         
+                                </figure>
+                            </fieldset>
+                        </details>
+                    </dd>
+                </dl>
+                <dt>
+                    <h3 id="SSD">SSD</h3>
+                    </dt>
+                    <dd>
+                        <details>
+                            <summary>Saiba Mais</summary>
+                            <meter min="0" max="60" value="60"></meter>
+                            <fieldset>
+                                <figure>
+                                    <h4>O que é:</h4>
+                                    <p>Os  SSD, sigla para <i>solid state drive</i>, são unidades de armazenamento que utilizam células de memórias flash. Ele se difere do HD por não ser mecânico, o modo de armazenamento de dados funciona a partir de um fenômeno chamado <a href="https://pt.wikipedia.org/wiki/Tunelamento_qu%C3%A2ntico" target="_blank">tunelamento quântico</a>.</p>
+                                    <p>Dentre as melhorias do SSD em relação ao HD podemos constatar a ausência de vibrações, uma vez que sua construção e funcionamento não é mecânica, o que elimina também os ruídos e o risco de mal funcionamento por choques físicos, além de uma menor massa e um consumo reduzido de energia.</p>
+                                    <p>Quanto à velocidade de transferência de dados, essa é a principal evolução. Enquanto um HD possui uma velocidade de leitura e escrita de até 200 MB/s, o SSD de padrão SATA possui uma velocidade de mais de 500 MB/s.</p>
+                                    <p>Mas o SSD ainda possui algumas desvantagens em relação ao HD, como o alto custo e caso ele pare de funcionar, não há nenhuma chance de recuperar os dados, diferente do HD, que ainda que esteja em mau funcionamento, é possível realizar uma recuperação.</p>
+                                    <p>Essas vantagens ditas do SSD foram para o padrão SATA, idêntico ao do HD (ambos possuem o mesmo modo de instalação), mas já existe uma melhoria para a tecnologia dos SSDs, que é a da mudança do padrão de entrada.</p>
+                                    <p>O novo padrão de entrada para SSDs é o M.2. Esse padrão possui vários protocolos distintos. Os mais comuns são o protocolo do padrão SATA e o do padrão NVME, sigla para <i>Non-Volatile Memory Express</i>. O padrão M.2 SATA possui uma velocidade de transferência muito maior que a do SSD de padrão SATA III, podendo chegar a mais de 1300 MB/s, o que é quase três vezes mais do que o máximo de um SSD SATA III.</p>
+                                    <p>Já o padrão M.2 NVME possui um protocolo com capacidades de transferência idênticas ao PCI Express da placa-mãe, com modelos atuais chegando a uma velocidade de transferência de mais de 3400 MB/s, quase 6 vezes mais do que o máximo de  SSD SATA III.</p>
+                                    <p>Além da diferença de velocidade, esse novo padrão se diferencia pelo tamanho do hardware, sendo bem menor do que o SSD SATA III.</p>
+                                    <p>Outra característica interessante dos SSDs é que eles também podem ser usados em RAID, mas é importante estar atento quanto a isto: um SSD só pode fazer RAID com outro SSD e um HD só pode fazer RAID com outro HD. A tentativa mista pode causar sérios problemas como a perda de ambos. O SSD M.2 NVME possui uma configuração diferente, pois não utiliza o padrão SATA, então o processo de RAID pelo setup da BIOS é diferente.</p>
+                                </figure>
+                            </fieldset>
+                        </details>
+                    </dd>
+                </dl>
+                    
+                <address> <br>
+                    <h4>Referências</h4>
+                    MACEDO, Ricardo; PELLOSO, Mateus; PREUSS, Evandro; PARREIRA, Fábio. LABORATÓRIO DE MONTAGEM E MANUTENÇÃO DE COMPUTADORES (2017). Disponível em: https://nte.ufsm.br/images/identidade_visual/MD_Laboratorio_de_montagem_final.pdf. Acesso em: 02 Maio de 2021.
+                </address>
+            </details>
+            </aside>
+            <hr>
+        </article>
+        <article>
+            <table>
+                <tr>
+                    <th>
+                        <img src="../img/doc2.png" alt="" width="200"> 
+                    </th>
+                    <th>
+                        <br><br><br><br><br><br><br>
+                        <h1>Rede de Computadores (Classificações)</h1>
+                    </th>
+                </tr>
+            </table>
+            <details>
+                <summary>Ler</summary>
+                <meter min="0" max="40" value="10" low="11"></meter>
+                <dl>
+                    <dt>
+                        <h2>O que é uma rede de computadores ?</h2>
+                    </dt>
+                    <dd>
+                        <p>Uma rede de computadores, também chamada de network, é um termo designado a, no mínimo, dois computadores interligados por qualquer meio e com a capacidade de transferir informações entre si ou compartilhar recursos de hardware.</p>
+                        <p>Todos os computadores presentes na rede são chamados de hosts e esses hosts podem exercer papéis diferentes, como requisitar uma informação ou fornecer uma informação, ou até ambos.</p>
+                        <p>Se um host requisita uma informação ou serviço, ele é classificado como <ins>cliente</ins>. Já o host que fornece a informação ou serviço é chamado de <ins>servidor</ins>.</p>
+                        <p>Exemplos de alguns tipos de servidores: servidor web (ou www), servidor de e-mail, servidor de arquivos e servidor de impressão.</p>
+                        <p>Visto o que é uma rede, agora é possível entender a sua classificação de acordo com a <a href="#dist">distância geográfica</a>. Apesar de essa classificação existir, o seu uso é um pouco mais subjetivo, levando a outros fatores além da distância.</p>
+                        <p>Além da classificação de distância geográfica, existe a classificação quanto a <a href="#inter">forma de interligação</a>.</p>
+                        <p>Para se montar uma rede é preciso estabelecer a conexão entre os computadores. A forma mais comum de conexão é feita por cabos, porém, existem diversas formas de como conectar um host a outro com esses cabos de rede e a classificação dessas formas é chamada de <a href="#top">topologia</a>.</p>
+                    </dd>
+                    <dt>
+                        <h3 id="dist">Classificação de Acordo com a Distância Geográfica</h3>
+                    </dt>
+                    <dd>
+                        <details>
+                            <summary>Saiba Mais</summary>
+                            <meter min="0" max="40" value="20"></meter>
+                            <fieldset>
+                                <figure>
+                                <p>Uma rede em um local de 5 a 10 quilômetros de distância entre os computadores mais extremos é classificada como local ou LAN, do inglês <i>Local Area Network</i>. Devido ao pequeno tamanho, uma LAN pode ser feita por conexões sem fio, do inglês <i>Wireless</i>.</p>
+                                <p>Uma rede em um local de 50 a 100 quilômetros de distância entre os computadores mais extremos é classificada como Metropolitana ou MAN, do inglês <i>Metropolitan Area Network</i>, pois ocupa a área de uma cidade. Esse tipo de rede é menos comum que a LAN.</p>
+                                <p>Uma rede sem limitações de distância entre computadores é classificada como WAN, <i>Wide Area Network</i>. O exemplo mais conhecido de WAN é a internet, a rede mundial de computadores.</p>
+                                <p>Quanto maior é a área de ocupação de uma rede, maior será o tempo de transferência de uma informação de um host para outro. Por isso que quem utiliza a internet sempre está buscando novas formas de melhorar a velocidade de transferência das informações, mas veremos isso um pouco a frente.</p>
+                                </figure>
+                            </fieldset>
+                        </details>
+                    </dd>
+                    <dt>
+                    </dt>
+                    <dt>
+                        <h3 id="inter">Classificação de Acordo com a Forma de interligação</h3>
+                    </dt>
+                    <dd>
+                        <details>
+                            <summary>Saiba Mais</summary>
+                            <meter min="0" max="40" value="30"></meter>
+                            <fieldset>
+                                <figure>
+                                    <p>Quando uma rede é restrita a uma instituição como uma empresa ou governo ela é classificada como intranet, pois ninguém de fora da instituição poderia acessá-la.</p>
+                                    <p>Já quando uma rede é parcialmente restrita a uma instituição, com acesso de parte da informação presente nela liberado para o público externo interessado, essa rede é classificada como Extranet.</p>
+                                    <p>E por último há a interligação disponível para todos com interesse, que é a rede mundial de computadores, a Internet</p>
+                                </figure>
+                            </fieldset>
+                        </details>
+                    </dd>
+                    <dt>
+                        <h3 id="top">Topologia</h3>
+                    </dt>
+                    <dd>
+                        <details>
+                            <summary>Saiba Mais</summary>
+                            <meter min="0" max="40" value="40"></meter>
+                            <fieldset>
+                                <figure>
+                                    <h4>Quais são: </h4>
+                                    <p>Existem diversas topologias e cada uma possui suas vantagens e desvantagens, mas as principais são as dos seguintes tipos: barramento, estrela, árvore, anel e rede de malha.</p>
+                                    <section>
+                                        <h4>Barramento</h4>
+                                        <p>A topologia de barramento consiste em um cabo central ligado à internet ou à um host principal e a partir desse cabo são feitas ramificações que conectem o fio ao host. Na análise das topologias os hosts são chamados de nós.</p>
+                                        <p>Essa topologia não é muito utilizada ultimamente e isso ocorre por causa das seguintes desvantagens:</p>
+                                        <ul>
+                                            <li>Apenas host pode transmitir uma informação por vez e para uma rede com muitos computadores, isso acaba atrasando as transferências de informação</li>
+                                            <li>Se o cabo principal tiver algum problema, toda a rede será prejudicada, pois será impedida a transferência total de informação.</li>
+                                        </ul>
+                                        <p>A forma como a informação é transferida é a seguinte: Em uma situação, supõe-se que haja 4 computadores, numerados da esquerda para a direita, conectados à internet por uma organização em barramento.</p>
+                                        <p>Então, o computador 4 resolve baixar um arquivo da internet.</p>
+                                        <p>A trajetória da informação será a seguinte: ela passará do computador 1 para o 2 e do 2 para o 3 para então chegar no 4. Do computador 1 até o 3, eles não terão baixado o arquivo, mas a informação teve que passar por eles para chegar ao computador de destino.</p>
+                                        <p>Porém, ela possui algumas vantagens como:</p>
+                                        <ul>
+                                            <li>Uma quantidade de cabo mais econômica do que as outras topologias. Além de ser simples e confiável.</li>
+                                            <li>Possui facilidade em se expandir, pois é fácil a instalação de novos hosts.</li>
+                                        </ul>
+                                    </section>
+                                    <section>
+                                        <h4>Estrela</h4>
+                                        <p>A topologia estrela possui esse nome devido a forma de como ela é estruturada, que se assemelha a uma estrela. Nela há um nó central cuja função é interconectar os demais nós da rede fazendo o gerenciamento do fluxo de dados que trafegam na rede.</p>
+                                        <p>A maior falha na topologia estrela é que se o nó central falhar, toda a rede ficará inoperante, justamente porque o nó central é o que interliga todos os outros nós.</p>
+                                        <p>Mas ainda assim essa topologia apresenta algumas vantagens em relação às outras, como a centralização e o fato de que o funcionamento de um computador na rede, com exceção do central, não afeta o outro.</p>
+                                    </section>
+                                    <section>
+                                        <h4>Árvore</h4>
+                                        <p>A topologia de árvore é uma organização hierárquica de rede. Nela, nós iniciais se ramificam para diversos outros nós, que repetem esse processo o quanto for necessário, formando um esquema que se assemelha aos galhos de uma árvore.</p>
+                                        <p>A vantagem que essa topologia possui é que, caso seja preciso adicionar um host à rede, basta colocá-lo em uma das pontas dos “galhos”.</p>
+                                        <p>E a sua desvantagem é que, caso um dos hosts que faz ramificação pare de funcionar, todos os outros que trafegam por essa ramificação também serão afetados.</p>
+                                    </section>
+                                    <section>
+                                        <h4>Anel</h4>
+                                        <p>A topologia em anel é semelhante à em barramento. Ela também possui um cabo principal onde há ramificação para os hosts se conectarem a ele, porém, diferente do barramento, esse cabo é fechado em forma de um anel.</p>
+                                        <p>Por causa da forma circular, uma das vantagens dessa topologia é a redundância, pois, caso um nó pare de funcionar, a informação pode inverter o sentido, de horário para anti-horário, por exemplo, e assim conseguirá transmitir a informação. Além disso, a performance da rede não é impactada pela quantidade de hosts, como ocorre no barramento.</p>
+                                        <p>Dentre as desvantagens dessa rede, pode-se constatar que, caso mais de um computador tenha problema na rede, independente do sentido de transmissão da informação, toda a rede será afetada.</p>
+                                        <p>Além disso, quando ocorre o problema em 1 computador, por causa da continuidade do funcionamento da rede, descobrir qual dos nós não está funcionando fica mais difícil.</p>
+                                    </section>                                    
+                                    <section>
+                                        <h4>Malha</h4>
+                                        <p>A topologia em malha, também chamada de Mesh, é organizada de uma maneira completamente interligada, ou seja, todos os nós da rede se relacionam entre si.</p>
+                                        <p>Por causa da sua integração completa, a informação pode ser transmitida por qualquer trajetória, independente de qualquer mal funcionamento em qualquer computador.</p>
+                                        <p>Por exemplo: em uma rede com 5 computadores numerados e em topologia de malha o computador 1 quer mandar mensagem para o computador 5. Mesmo que os computadores 2, 3 e 4 não funcionem, a informação ainda assim será transmitida, pois há uma ampla redundância.</p>
+                                        <p>Além dessa vantagem, é muito fácil identificar qual computador não está funcionando na rede. Basta saber qual trajetória não está sendo feita.</p>
+                                        <p>E a principal desvantagem dessa rede é que o custo para a instalação dela e de novos nós é muito caro.</p>
+                                        <p>Por exemplo: para adicionar um único computador em uma rede com 5 nós, será preciso mais 5 cabos.</p>
+                                        <p>Devido às desvantagens de cada topologia, muitas vezes elas são instaladas de maneira mista, como uma junção entre as topologias Mesh, árvore e barramento.</p>
+                                    </section>
+                                </figure>
+                            </fieldset>
+                        </details>
+                    </dd>
+                </dl>
+                <address> <br>
+                    <h4>Referências</h4>
+                    Redes de Computadores. Disponível em: https://concurseria.com.br/wp-content/uploads/2017/12/Redes-de-Computadores-Material-Complementar-ok.pdf . Acesso em: 20 Julho de 2021.
+                </address>
+            </details>
+        </article>
+        
+    </figure></figure></figure>
+
+    <embed src="../yield/footer.html" type="" width="100%" id="informa">
+</body>
+</html>
